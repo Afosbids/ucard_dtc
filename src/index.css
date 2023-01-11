@@ -8,7 +8,11 @@
   --dark-text-color: #666666;
   --bg-light-blue: #F9FAFC;
   --bg-grey: #F5F5F5;
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+
 
 *{
   margin: 0;
@@ -21,4 +25,11 @@
 .home-container{
   padding-left: 80px;
   padding-right: 80px;
+}
+
+@media screen and (max-width:600px) {
+  .home-container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
