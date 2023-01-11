@@ -1,0 +1,11 @@
+.home-footer-container{
+    height: 383px;
+    background: var(--white-color);
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-section, .footer-middle-section, .footer-right-section{
+    
+}
