@@ -6,6 +6,7 @@ import HowItWorks from '../../components/HowItWorks/HowItWorks'
 import Testimonials from '../../components/Testimonials/Testimonials'
 import ContactUs from '../../components/ContactUs/ContactUs'
 import HomeFooter from '../../components/HomeFooter/HomeFooter'
+import TransactionReceipt from '../../components/TransactionReceipt/TransactionReceipt'
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       {/* <Testimonials /> */}
       <ContactUs />
       <HomeFooter />
+      <TransactionReceipt />
     </div>
   )
 }
