@@ -1,0 +1,40 @@
+.paymentsuccessfulcard-container{
+    width: 639px;
+    height: 608px;
+    border-radius: 16px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    margin-left: 400px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.paymentsuccessfulcard-container h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #242E42;
+}
+
+.paymentsuccessfulcard-container p{
+    font-size: 15px;
+    max-width: 370px;
+    color: #8A8A8F;
+    text-align: center;
+}
+
+.paymentsuccessful-btn{
+    width: 412px;    
+}
+
+.paymentsuccessful-btn button{
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+}

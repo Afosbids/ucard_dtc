@@ -1,0 +1,44 @@
+.paymentoptioncard-container{
+    width: 100%;
+    max-width: 860px;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.paymentoptioncard-container:hover{
+    box-shadow: var(--box-shadow);
+    background: D9D9D9;
+}
+
+.paymentoptioncard-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.paymentoptioncard-text h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: #242731;
+}
+
+.paymentoptioncard-text p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #666666;
+}
+
+.paymentoptioncard-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.paymentoptioncard-right{
+    margin-top: 60px;
+}

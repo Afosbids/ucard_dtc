@@ -7,6 +7,9 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 import ContactUs from '../../components/ContactUs/ContactUs'
 import HomeFooter from '../../components/HomeFooter/HomeFooter'
 import TransactionReceipt from '../../components/TransactionReceipt/TransactionReceipt'
+import CardDetailsCard from '../../components/CardDetailsCard/CardDetailsCard'
+import PaymentSuccessfulCard from '../../components/PaymentSuccessfulCard/PaymentSuccessfulCard'
+import SelectPaymentOption from '../../components/SelectPaymentOption/SelectPaymentOption'
 
 const HomePage = () => {
   return (
@@ -18,6 +21,9 @@ const HomePage = () => {
       <ContactUs />
       <HomeFooter />
       <TransactionReceipt />
+      <CardDetailsCard />
+      <PaymentSuccessfulCard />
+      <SelectPaymentOption />
     </div>
   )
 }
