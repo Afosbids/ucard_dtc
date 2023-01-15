@@ -1,0 +1,43 @@
+.emailotpcard-container{
+    height: 487px;
+    width: 627px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    padding: 50px;
+}
+
+.ucard-logo{
+    margin-bottom: 30px;
+}
+
+.otp-code-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.otp-email-greeting{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.otp-email-body{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.otp-email-footer{
+    text-align: center;
+    font-size: 10px;
+    font-family: Inter;
+    color: #979797;
+    margin-top: 40px;
+}

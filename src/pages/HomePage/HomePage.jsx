@@ -10,6 +10,7 @@ import TransactionReceipt from '../../components/TransactionReceipt/TransactionR
 import CardDetailsCard from '../../components/CardDetailsCard/CardDetailsCard'
 import PaymentSuccessfulCard from '../../components/PaymentSuccessfulCard/PaymentSuccessfulCard'
 import SelectPaymentOption from '../../components/SelectPaymentOption/SelectPaymentOption'
+import EmailOtpCard from '../../components/EmailOtpCard/EmailOtpCard'
 
 const HomePage = () => {
   return (
@@ -17,13 +18,14 @@ const HomePage = () => {
       <HomeNav />
       <ShowCase />
       <HowItWorks />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <ContactUs />
       <HomeFooter />
       <TransactionReceipt />
       <CardDetailsCard />
       <PaymentSuccessfulCard />
       <SelectPaymentOption />
+      <EmailOtpCard />
     </div>
   )
 }
