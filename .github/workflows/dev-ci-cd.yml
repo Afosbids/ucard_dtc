@@ -21,7 +21,7 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npm test
+          npm run test  --- --- coverage
     
   Image-build:
     needs: Application-tests
