@@ -26,7 +26,7 @@ spec:
         configMap:
           name: nginx-conf
       containers:
-      - image: registry.ucard.com.ng/ucard_dtc-dev:latest
+      - image: SAMPLE
         name: ucard-dtc-dev
         ports:
         - containerPort: 80
