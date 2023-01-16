@@ -39,6 +39,7 @@ export default function TransactionHistory() {
 
                 <div className="history-filter">
 
+
                     <p>Filter</p>
                 </div>
             </div>
