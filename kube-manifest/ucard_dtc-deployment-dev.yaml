@@ -36,9 +36,6 @@ spec:
           mountPath: /etc/nginx/conf.d/
         resources:
           requests:
-            cpu: "200m"
-            memory: "128Mi"
-          limits:
-            cpu: "800m"
-            memory: "1Gi"
+            cpu: "50m"
+            memory: "52Mi"
       restartPolicy: Always
