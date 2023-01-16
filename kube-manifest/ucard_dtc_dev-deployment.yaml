@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ucard-dtc-dev
+    type: frontend
+  name: ucard-dtc-dev
+  namespace: ucard-dtc-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ucard-dtc-dev
+      type: frontend
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: ucard-dtc-dev
+        type: frontend
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      volumes:
+      - name: nginx-conf
+        configMap:
+          name: nginx-conf
+      containers:
+      - image: registry.ucard.com.ng/ucard_dtc-dev:latest
+        name: ucard-dtc-dev
+        ports:
+        - containerPort: 80
+          name: access
+        volumeMounts:
+        - name: nginx-conf
+          mountPath: /etc/nginx/conf.d/
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "128Mi"
+          limits:
+            cpu: "800m"
+            memory: "1Gi"
+      restartPolicy: Always
