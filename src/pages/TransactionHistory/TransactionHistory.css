@@ -1,0 +1,51 @@
+.transaction-history-container{
+    width: 100%;
+    padding: 100px 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.transaction-table-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.transaction-filter-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:50px 0px;
+}
+
+.history-daterange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.transaction-filter-options input{
+    height: 56px;
+    background: #FAFAFA;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+
+.history-filter{
+    height: 56px;
+    width: 100px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
