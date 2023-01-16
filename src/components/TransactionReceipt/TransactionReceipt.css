@@ -1,0 +1,91 @@
+.transaction-receipt-card{
+    height: 728px;
+    width: 578px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+
+.close-receipt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.transaction-receipt-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.transaction-receipt-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.transaction-receipt-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.transaction-receipt-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.transaction-receipt-left p{
+    font-size: 16px;
+    color: #989898;
+}
+
+.transaction-receipt-right p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #666666;
+}
+
+
+
+.receipt-print-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.transaction-receipt-card button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--primary-color);
+    min-width: 412px;
+    height: 64px;
+    color: var(--white-color);
+    margin-top: 90px;
+    gap: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.transaction-receipt-card button p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
