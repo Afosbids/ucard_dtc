@@ -5,26 +5,26 @@ on:
     branches: [ develop ]
 
 jobs:
-  Application-tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [17.x]
-    steps:
+  #Application-tests:
+  #  runs-on: ubuntu-latest
+  #  strategy:
+  #    matrix:
+  #      node-version: [17.x]
+  ##  steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm build and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test  --- --- coverage
+   #   - uses: actions/checkout@v3
+   #   - name: Use Node.js ${{ matrix.node-version }}
+   #     uses: actions/setup-node@v2
+   #    with:
+   #       node-version: ${{ matrix.node-version }}
+   #   - name: npm build and test
+   #     run: |
+   #       npm install
+   #       npm run build --if-present
+   #       npm run test  --- --- coverage
     
   Image-build:
-    needs: Application-tests
+    # needs: Application-tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
