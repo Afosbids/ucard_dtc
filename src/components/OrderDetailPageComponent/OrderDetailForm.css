@@ -4,27 +4,39 @@
     width: 150px;
 }
 
-.form-group > input, label, select {
+.form-group > input, select {
     display: block;
     color: #666666;
+    width: 412px;
+    height: 60px;
+    border: 1.4px solid #989898;
+    border-radius: 5px;
+    background: #FFFFFF;
 }
 
+.form-group > label {
+    display: block;
+    color: #666666;
+    width: 412px;
+    /* height: 40px; */
+}
+
+
 input[type="text"] {
-    width: 480px;
-    height: 60px;
     padding: 12px 20px;
     margin: 8px 0;
     border-radius: 6px;
-    border: 2px solid silver;
+    border: 1.4px solid #989898;
+    border-radius: 8px;
 }
 
 select {
-    width: 480px;
+    width: 680px;
     height: 60px;
     padding: 12px 20px;
     margin: 8px 0;
-    border-radius: 6px;
-    border: 2px solid silver;
+    border: 1.4px solid #989898;
+    border-radius: 8px;
 }
 
 .btn {

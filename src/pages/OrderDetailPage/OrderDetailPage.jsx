@@ -15,7 +15,7 @@ const OrderDetailPage = () => {
         <OrderDetailHeading />
         <OrderDetailForm />
         <OrderDetailFooter />
-        <PaymentOptionDetailModal />
+        {/* <PaymentOptionDetailModal /> */}
     </div>
 )
 }
