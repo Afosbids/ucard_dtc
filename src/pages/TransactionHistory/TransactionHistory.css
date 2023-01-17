@@ -1,9 +1,16 @@
 .transaction-history-container{
     width: 100%;
-    padding: 100px 300px;
+    padding: 100px 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.transaction-history-container h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #242731;
+    margin-bottom: 10px;
 }
 
 .transaction-table-body{
@@ -32,9 +39,18 @@
 .transaction-filter-options input{
     height: 56px;
     background: #FAFAFA;
-    border: none;
+    border: 1px solid #FAFAFA;
     border-radius: 8px;
     padding: 0px 20px;
+
+}
+
+.transaction-searchbox{
+    width: 100%;
+}
+
+.transaction-searchdate{
+    width: 200px;
 }
 
 .history-filter{
@@ -48,4 +64,16 @@
     align-items: center;
     font-size: 12px;
     font-weight: 600;
+    gap: 10px;
+}
+
+.history-searchbar{
+    position: relative;
+    width: 512px;
+}
+
+.transaction-search-icon{
+    position: absolute;
+    top: 15px;
+    left: 470px;
 }
