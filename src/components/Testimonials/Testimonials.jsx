@@ -4,8 +4,15 @@ import PrevArrow from '../../assets/previousarrow.svg'
 import NextArrow from '../../assets/nextarrow.svg'
 import TestimonialImage from '../../assets/testimonialimage.svg'
 import QuoteIcon from '../../assets/testimonialquoteicon.svg'
+import { nextSlide, prevSlide, dotSlide } from '../../features/slices/sliderSlice'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Testimonials = () => {
+
+  const slideIndex = useSelector((state) => state.slider.value)
+  const dispatch = useDispatch()
+
+
   return (
     <div className='testimonial-section-container home-container'>
       <div className='testimonial-section-left'>
@@ -15,7 +22,9 @@ const Testimonials = () => {
 
 
         <div className='testimonial-arrows' >
-          <div className='testimonial-prev-arrow'>
+          <div  
+          onClick={() => dispatch(nextSlide(slideIndex + 1))}
+          className='testimonial-prev-arrow'>
             <img src={PrevArrow} alt="" />
           </div>
 
