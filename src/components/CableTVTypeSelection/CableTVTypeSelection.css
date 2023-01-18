@@ -1,0 +1,52 @@
+.cable-tv-type-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: #F6F4F4;
+    border: 0.767746px solid rgba(35, 35, 35, 0.05);
+    border-radius: 3.83873px;
+    width: 412px;
+    height: 169px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
+    left: 0px;
+    top: 0px;
+}
+
+.gotv-section, .startimes-section, .showmax-section, .dstv-section  {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 28px;
+    gap: 10px;
+    width: 412px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 0.01em;
+    background: #FFFFFF;
+    color: #5C2684;
+    border: 0.767746px solid rgba(35, 35, 35, 0.05);
+}
+
+.dstv-section > img {
+    float: right;
+    margin-left: 298px;
+}
+
+.gotv-section > img {
+    float: right;
+    margin-left: 295px;
+}
+
+.startimes-section > img {
+    float: right;
+    margin-left: 258px;
+}
+
+.showmax-section > img {
+    float: right;
+    margin-left: 258px;
+}
