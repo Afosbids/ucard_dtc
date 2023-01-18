@@ -1,6 +1,7 @@
 import React from 'react'
 import './OrderDetailForm.css'
 
+
 const OrderDetailForm = () => {
     return (
         <div>
@@ -22,10 +23,9 @@ const OrderDetailForm = () => {
                         <label>Email</label>
                         <input type="text" placeholder="Enter your email address" /><br />
                         <label>Select Country</label>
-                        <input type="text"  /><br />
+                        <input type="search" placeholder='Sierra Leone (SL)' /><br />
                         <button className='btn'>Continue</button>
-                    </div>
-                    
+                    </div>    
                 </form>
             </section>
             
