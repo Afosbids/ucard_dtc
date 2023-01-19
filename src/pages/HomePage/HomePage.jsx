@@ -9,7 +9,6 @@ import HomeFooter from '../../components/HomeFooter/HomeFooter'
 import TransactionReceipt from '../../components/TransactionReceipt/TransactionReceipt'
 import CardDetailsCard from '../../components/CardDetailsCard/CardDetailsCard'
 import PaymentSuccessfulCard from '../../components/PaymentSuccessfulCard/PaymentSuccessfulCard'
-import SelectPaymentOption from '../../components/SelectPaymentOption/SelectPaymentOption'
 import EmailOtpCard from '../../components/EmailOtpCard/EmailOtpCard'
 
 const HomePage = () => {
@@ -24,7 +23,6 @@ const HomePage = () => {
       <TransactionReceipt />
       <CardDetailsCard />
       <PaymentSuccessfulCard />
-      <SelectPaymentOption />
       <EmailOtpCard />
     </div>
   )

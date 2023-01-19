@@ -1,0 +1,19 @@
+.section_1_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section_1_top > div {
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.section_1_top > div > p {
+    float: right;
+    color: #666666;
+}
+
+.dotted-line {
+    padding: 8px;
+}
