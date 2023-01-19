@@ -9,6 +9,7 @@ import OrderSummaryPage from './pages/OrderSummaryPage/OrderSummaryPage'
 import PaymentOptionDetailPage from './pages/PaymentOptionDetailPage/PaymentOptionDetail'
 import TransactionConfirmPage from './pages/TransactionConfirmPage/TransactionConfirmPage'
 import TransactionHistoryPage from './pages/TransactionHistoryPage/TransactionHistoryPage'
+import WrongOrderDetailPage from './pages/WrongOrderDetailPage/WrongOrderDetailPage'
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
       <Route path='/order-summary-page' element={<OrderSummaryPage />}></Route> */}
       {/* <Route path='/payment-option-detail-page' element={<PaymentOptionDetailPage />}></Route> */}
       {/* <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route> */}
-      <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
+      {/* <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route> */}
+      <Route path='/wrong-order-detail-page' element={<WrongOrderDetailPage />}></Route>
     </Routes>
   )
 }
