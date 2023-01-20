@@ -44,13 +44,19 @@
     background: var(--primary-color);
 }
 
+#testimonial-right-container{
+    /* display: flex;
+    flex-direction: column; */
+}
 
-.testimonial-section-right{
+#testimonial-section-right{
     height: 404px;
     width: 424px;
     background: #F5E5D9;
     position: relative;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    
+
 }
 
 .testimonial-card{
@@ -112,4 +118,19 @@
     font-size: 14px;
     color: #8A8A8F;
     line-height: 24px;
+}
+
+
+.opaque{
+    opacity: 100;
+    transition-duration: 700;
+    /* scale: 100; */
+    transition-timing-function: ease-in-out;
+}
+
+.not-opaque{
+    opacity: 100;
+    transition-duration: 700;
+    /* scale: 100; */
+    transition-timing-function: ease-in-out;
 }

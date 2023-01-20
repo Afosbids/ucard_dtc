@@ -1,0 +1,27 @@
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.section-2 > h1 {
+    height: 40px;
+    left: 37.62%;
+    right: 37.62%;
+    top: calc(50% - 40px/2 - 410px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    font-size: 36px;
+    color: #242731;
+}
+
+.section-2 > p {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #666666;
+    margin: 20px;
+}
