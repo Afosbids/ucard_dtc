@@ -8,11 +8,9 @@ import OrderDetailFooter from '../../components/OrderDetailPageComponent/OrderDe
 const OrderSummaryPage = () => {
     return (
         <div>
-            <OrderDetailNavBar />
             <OrderSummaryProcess />
             <OrderSummaryHeader />
             <OrderSummary />
-            <OrderDetailFooter />
         </div>
     )
 }

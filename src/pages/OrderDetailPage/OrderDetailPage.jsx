@@ -10,11 +10,9 @@ import PaymentOptionDetailModal from '../../components/PaymentOptionDetailModal/
 const OrderDetailPage = () => {
     return (
     <div>
-        <OrderDetailNavBar />
         <OrderDetailProcess />
         <OrderDetailHeading />
         <OrderDetailForm />
-        <OrderDetailFooter />
         {/* <PaymentOptionDetailModal /> */}
     </div>
 )

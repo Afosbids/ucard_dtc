@@ -1,6 +1,8 @@
 import React from 'react'
 import './ShowCase.css'
 import ShowCaseImage from '../../assets/showcaseimage.svg'
+import { Link } from 'react-router-dom'
+
 
 const ShowCase = () => {
   return (
@@ -13,7 +15,7 @@ const ShowCase = () => {
         <p>A platform for making payment for Cable TV
           subscriptions and bills payments.</p>
 
-          <button>Pay Now</button>
+          <button><Link to='./select-payment-option'>Pay Now</Link></button>
       </div>
 
       <div className="home-showcase-right">
