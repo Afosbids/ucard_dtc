@@ -19,12 +19,12 @@ function App() {
       <Route path='/transaction-history' element={<TransactionHistory />} ></Route>
       <Route path='/support' element={<ContactSupport />} ></Route>
       <Route path='*' element={<NotFound />} /> */}
-      {/* <Route path='/order-detail-page' element={<OrderDetailPage />}></Route>
-      <Route path='/order-summary-page' element={<OrderSummaryPage />}></Route> */}
+      <Route path='/order-detail-page' element={<OrderDetailPage />}></Route>
+      {/* <Route path='/order-summary-page' element={<OrderSummaryPage />}></Route> */}
       {/* <Route path='/payment-option-detail-page' element={<PaymentOptionDetailPage />}></Route> */}
       {/* <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route> */}
       {/* <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route> */}
-      <Route path='/wrong-order-detail-page' element={<WrongOrderDetailPage />}></Route>
+      {/* <Route path='/wrong-order-detail-page' element={<WrongOrderDetailPage />}></Route> */}
     </Routes>
   )
 }
