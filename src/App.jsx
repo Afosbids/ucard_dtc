@@ -5,6 +5,7 @@ import TransactionHistory from './pages/TransactionHistory/TransactionHistory'
 import NotFound from './pages/NotFound/NotFound'
 import ContactSupport from './pages/ContactSupport/ContactSupport'
 import OrderDetailPage from './pages/OrderDetailPage/OrderDetailPage'
+import WrongOrderDetailPage from './pages/WrongOrderDetailPage/WrongOrderDetailPage'
 import OrderSummaryPage from './pages/OrderSummaryPage/OrderSummaryPage'
 import PaymentOptionDetailPage from './pages/PaymentOptionDetailPage/PaymentOptionDetail'
 import TransactionConfirmPage from './pages/TransactionConfirmPage/TransactionConfirmPage'
@@ -22,6 +23,7 @@ function App() {
       <Route path='/transaction-history' element={<TransactionHistory />} ></Route>
       <Route path='/support' element={<ContactSupport />} ></Route>
       <Route path='/order-detail-page' element={<OrderDetailPage />}></Route>
+      <Route path='/wrong-order-detail-page' element={<WrongOrderDetailPage />}></Route>
       <Route path='/order-summary-page' element={<OrderSummaryPage />}></Route>
       <Route path='/payment-option-detail-page' element={<PaymentOptionDetailPage />}></Route>
       <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route>
