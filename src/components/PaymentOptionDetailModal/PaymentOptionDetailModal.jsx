@@ -1,7 +1,7 @@
 import React from 'react'
 import './PaymentOptionDetailModal.css'
 import Close_btn from '../../assets/Close.svg'
-import Info_icon from '../../assets/info.svg'
+import Info_icon from '../../assets/Info.svg'
 
 const PaymentOptionDetailModal = ({ closeModal }) => {
     return (
