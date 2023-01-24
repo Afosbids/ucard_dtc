@@ -10,6 +10,7 @@ import OrderSummaryPage from './pages/OrderSummaryPage/OrderSummaryPage'
 import PaymentOptionDetailPage from './pages/PaymentOptionDetailPage/PaymentOptionDetail'
 import TransactionConfirmPage from './pages/TransactionConfirmPage/TransactionConfirmPage'
 import TransactionHistoryPage from './pages/TransactionHistoryPage/TransactionHistoryPage'
+import TransactionSuccessfulModal from './components/TransactionSuccessfulModal/TransactionSuccessfulModal'
 import OrderDetailNavBar from './components/OrderDetailPageComponent/OrderDetailNavBar'
 import { Layout } from './components/Layout/Layout'
 import SelectPaymentOption from './components/SelectPaymentOption/SelectPaymentOption'
@@ -29,6 +30,7 @@ function App() {
       <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route>
       <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
+      <Route path='/transaction-success' element={<TransactionSuccessfulModal />}></Route>
       <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>

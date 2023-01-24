@@ -12,6 +12,7 @@ const TransactionSuccessfulModal = () => {
                             <h1>OTP Sent Successfully</h1>
                             <p>An OTP has been sent to your mail, please review and input the otp to generate your transaction history</p>
                         </div>
+                        <input className="success-btn" type="button" value="Ok" />
                     </div>
             </div>
         </div>
