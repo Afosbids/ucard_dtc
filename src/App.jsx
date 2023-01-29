@@ -14,6 +14,7 @@ import TransactionSuccessfulModal from './components/TransactionSuccessfulModal/
 import OrderDetailNavBar from './components/OrderDetailPageComponent/OrderDetailNavBar'
 import { Layout } from './components/Layout/Layout'
 import SelectPaymentOption from './components/SelectPaymentOption/SelectPaymentOption'
+import DropdownBouquet from './components/DropdownBouquet/DropdownBouquet'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
       <Route path='/transaction-success' element={<TransactionSuccessfulModal />}></Route>
+      {/* <Route path='/dropdown-bouquet' element={<DropdownBouquet />}></Route> */}
       <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>

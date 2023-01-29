@@ -6,6 +6,11 @@ import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import ListDivider from '@mui/joy/ListDivider';
 import './OrderDetailForm.css'
+import Dstv_logo from '../../assets/image 12.svg'
+import Gotv_logo from '../../assets/image 13.svg'
+import Startimes_logo from '../../assets/image 14.svg'
+import Showmax_logo from '../../assets/image 15.svg'
+
 // import styled from 'styled-components';
 
 
@@ -13,7 +18,7 @@ import './OrderDetailForm.css'
 const OrderDetailForm = () => {
     const [selectedOption, setSelectedOption] = useState('');
     const colorStyles = {
-        control: (styles) => ({...styles, backgroundColor: "#ffffff"})
+        control: (styles) => ({...styles, backgroundColor: "white"})
     }
 
     return (
@@ -23,6 +28,8 @@ const OrderDetailForm = () => {
                     <div className="form-group">
                         <label>Select Cable TV Type</label>
                         <Select
+                        value={selectedOption}
+                        onChange={event => setSelectedOption(event.target.value)}
                         placeholder="Please select cable tv type"
                         indicator={<KeyboardArrowDown />}
                         sx={{
@@ -36,32 +43,32 @@ const OrderDetailForm = () => {
                         }}
                         styles={colorStyles}
                         >
-                            <Option value="Please select cable tv type" disabled selected hidden></Option>
+                            <Option value="Please select cable tv type"></Option>
                             <Option>
                                 Dstv
                             <ListItemDecorator>
-                                <Avatar size="sm" src="../../assets/image 12.svg" />
+                                <Avatar size="sm" src={Dstv_logo} />
                             </ListItemDecorator>
                             </Option>
                             <ListDivider role="none" inset="startContent" />
                             <Option>
                                 Gotv
                             <ListItemDecorator>
-                                <Avatar size="sm" src="../../assets/image 13.svg" />
+                                <Avatar size="sm" src={Gotv_logo} />
                             </ListItemDecorator>
                             </Option>
                             <ListDivider role="none" inset="startContent" />
                             <Option>
                                 Startimes
                             <ListItemDecorator>
-                                <Avatar size="sm" src="../../assets/image 13.svg" />
+                                <Avatar size="sm" src={Startimes_logo} />
                             </ListItemDecorator>
                             </Option>
                             <ListDivider role="none" inset="startContent" />
                             <Option>
                                 Showmax
                             <ListItemDecorator>
-                                <Avatar size="sm" src="../../assets/image 13.svg" />
+                                <Avatar size="sm" src={Showmax_logo} />
                             </ListItemDecorator>
                             </Option>
                             <ListDivider role="none" inset="startContent" />
@@ -69,7 +76,8 @@ const OrderDetailForm = () => {
                         <label>Input Decoder Number</label>
                         <input type="text" placeholder="Enter your Decoder Number" /><br />
                         <label>Select Bouquet Type</label>
-                        <Select value={selectedOption}
+                        <Select 
+                        value={selectedOption}
                         onChange={event => setSelectedOption(event.target.value)}
                         indicator={<KeyboardArrowDown />}
                         sx={{

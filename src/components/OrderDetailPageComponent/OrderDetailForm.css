@@ -3,6 +3,7 @@
     width: 150px;
 }
 
+
 .form-group > input, Select {
     display: block;
     color: #666666;
@@ -17,7 +18,14 @@
     display: block;
     color: #666666;
     width: 412px;
+    padding-bottom: 10px;
 }
+
+/* .dropdown-bouquet {
+    margin: 0;
+    padding: 0;
+
+} */
 
 
 input[type="text"] {
@@ -51,6 +59,7 @@ Select {
 }
 
 
+
 .btn {
     width: 480px;
     height: 60px;
@@ -62,7 +71,7 @@ Select {
     font-size: 16px;
 }
 
-.form-group > Select .option-section {
+/* .form-group > Select .option-section {
     background: #ffffff;
     color: #5C2684;
-}
+} */
