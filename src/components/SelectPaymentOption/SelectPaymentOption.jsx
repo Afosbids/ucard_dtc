@@ -16,6 +16,7 @@ const SelectPaymentOption = () => {
     console.log(key)
     console.log('hello')
     setItemId(key)
+    setIsModalOpen(true)
   }
   return (
     <>
@@ -25,7 +26,6 @@ const SelectPaymentOption = () => {
 
         <p className="select-payment-option-text">Choose a payment option to make payment</p>
 
-        <button onClick={() => setIsModalOpen(true)}>Show Modal</button>
         <div className='paymentoption-container'>
           {
             PaymentOptionData.map((item, key) => {
@@ -40,7 +40,8 @@ const SelectPaymentOption = () => {
         </div>
       </div>
 
-      <Modal
+      {
+        itemId === 1 ?  <Modal
         isOpened={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
@@ -48,6 +49,11 @@ const SelectPaymentOption = () => {
           onClose={() => setIsModalOpen(false)}
         />
       </Modal>
+
+      : ""
+      }
+
+     
       {/* <CardDetailsCard show={show} closeModal={() => setShow(false)} /> */}
     </>
   )
