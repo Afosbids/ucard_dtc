@@ -3,9 +3,11 @@ import './PaymentOptionCard.css'
 import PayWithCard from '../../assets/paywithcardicon.svg'
 import PaymentOption from '../../assets/cardtypelogo.svg'
 
-const PaymentOptionCard = ({ icon, header, paragraph, logo }) => {
+const PaymentOptionCard = ({ icon, header, paragraph, logo, onPress }) => {
     return (
-        <div className='paymentoptioncard-container'>
+        <button className='paymentoptioncard-container' 
+        onClick={onPress}
+        >
             <div className='paymentoptioncard-left'>
                 <div>
                     <img src={icon} alt="" />
@@ -23,7 +25,7 @@ const PaymentOptionCard = ({ icon, header, paragraph, logo }) => {
                 <img src={logo} alt="" />
             </div>
 
-        </div>
+        </button>
     )
 }
 

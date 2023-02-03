@@ -21,10 +21,10 @@ const HomePage = () => {
       <ContactUs />
       <HomeFooter />
       
-      {/* <TransactionReceipt />
+      {/* <TransactionReceipt /> */}
       <CardDetailsCard />
-      <PaymentSuccessfulCard />
-      <EmailOtpCard /> */}
+      {/* <PaymentSuccessfulCard /> */}
+      {/* <EmailOtpCard /> */}
     </div>
   )
 }
