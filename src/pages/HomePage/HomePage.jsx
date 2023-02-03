@@ -22,7 +22,7 @@ const HomePage = () => {
       <HomeFooter />
       
       {/* <TransactionReceipt /> */}
-      <CardDetailsCard />
+      {/* <CardDetailsCard /> */}
       {/* <PaymentSuccessfulCard /> */}
       {/* <EmailOtpCard /> */}
     </div>
