@@ -1,6 +1,4 @@
 import React from 'react'
-import CableTVTypeSelection from '../../components/CableTVTypeSelection/CableTVTypeSelection'
-import DstvSelection from '../../components/DstvSelection/DstvSelection'
 import OrderDetailNavBar from '../../components/OrderDetailPageComponent/OrderDetailNavBar'
 import './TransactionHistoryPage.css'
 
@@ -18,8 +16,6 @@ const TransactionHistoryPage = () => {
             <div className='transaction_btn'>
                 <button>Submit</button>
             </div>
-            {/* <DstvSelection /> */}
-            {/* <CableTVTypeSelection /> */}
         </div>
 
     )
