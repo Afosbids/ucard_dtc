@@ -12,6 +12,7 @@ import TransactionHistoryPage from './pages/TransactionHistoryPage/TransactionHi
 import OrderDetailNavBar from './components/OrderDetailPageComponent/OrderDetailNavBar'
 import { Layout } from './components/Layout/Layout'
 import SelectPaymentOption from './components/SelectPaymentOption/SelectPaymentOption'
+import StepperForm from './pages/StepperForm/Stepperform'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route>
       <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
+      <Route path='/stepper-form' element={<StepperForm />}></Route>
       <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
