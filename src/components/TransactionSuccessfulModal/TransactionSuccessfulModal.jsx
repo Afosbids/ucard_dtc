@@ -2,10 +2,11 @@ import React from 'react'
 import Success_icon from '../../assets/Shape.svg'
 import './TransactionSuccessfulModal.css'
 
-const TransactionSuccessfulModal = () => {
+const TransactionSuccessfulModal = ({showModal, closeModal}) => {
     return (
         <div>
-            <div className='tran_success_cont'>
+            {showModal && (
+                    <div className='tran_success_cont' onClick={closeModal}>
                     <div className='success_icon'>
                         <img src={Success_icon} />
                         <div className='tran_body'>
@@ -15,6 +16,7 @@ const TransactionSuccessfulModal = () => {
                         <input className="success-btn" type="button" value="Ok" />
                     </div>
             </div>
+            )}
         </div>
     )
 }
