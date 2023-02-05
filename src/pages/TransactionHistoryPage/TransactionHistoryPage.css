@@ -67,7 +67,7 @@
     font-size: 15px;
 }
 
-.transaction_input > input[value] {
+.transaction_input > input::placeholder {
     color: #645262;
     line-height: 22px;
     padding-left: 15px;
