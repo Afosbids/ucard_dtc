@@ -4,10 +4,12 @@ import './SelectPaymentOption.css'
 import { PaymentOptionData } from '../../dummydata/paymentoptiondata'
 import CardDetailsCard from '../../components/CardDetailsCard/CardDetailsCard'
 import Modal from '../Modal/Modal'
+import { useNavigate } from 'react-router-dom'
 
 const SelectPaymentOption = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [itemId, setItemId] = useState(0)
+  const navigate = useNavigate();
 
   console.log(itemId)
 
@@ -41,7 +43,8 @@ const SelectPaymentOption = () => {
       </div>
 
       {
-        itemId === 1 ?  <Modal
+        itemId === 1 ?  
+        <Modal
         isOpened={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
@@ -50,8 +53,13 @@ const SelectPaymentOption = () => {
         />
       </Modal>
 
+      : itemId === 2 ? 
+      navigate("/payment-option-detail-page")
+
       : ""
       }
+
+
 
      
       {/* <CardDetailsCard show={show} closeModal={() => setShow(false)} /> */}

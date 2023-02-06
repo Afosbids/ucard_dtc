@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import OrderDetailNavBar from '../../components/OrderDetailPageComponent/OrderDetailNavBar'
 import TransactionSuccessfulModal from '../../components/TransactionSuccessfulModal/TransactionSuccessfulModal'
 import './TransactionHistoryPage.css'
