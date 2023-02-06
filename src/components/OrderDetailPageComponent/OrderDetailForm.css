@@ -9,6 +9,7 @@
 
 .dropdown {
     position: relative;
+    display: inline-block;
 }
 
 .dropdown > label {
@@ -47,8 +48,10 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #ccc;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 5px;
     padding: 0;
     margin: 0;
@@ -120,8 +123,9 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 5px;
     padding: 0;
     margin: 0;
