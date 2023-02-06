@@ -1,8 +1,18 @@
 import React from 'react'
 import OrderDetailNavBar from '../../components/OrderDetailPageComponent/OrderDetailNavBar'
+import TransactionSuccessfulModal from '../../components/TransactionSuccessfulModal/TransactionSuccessfulModal'
 import './TransactionHistoryPage.css'
 
 const TransactionHistoryPage = () => {
+    const [showModal, setShowModal] = useState(false)
+
+        const openModal = () => {
+            setShowModal(true);
+        };
+    
+        const closeModal = () => {
+            setShowModal(false);
+        };
     return (
         <div>
             <div className="transaction_header">
@@ -11,10 +21,11 @@ const TransactionHistoryPage = () => {
             </div>
             <div className="transaction_input">
                 <p>Decoder/ Smartcard Number </p>
-                <input type="text" value="Input your decoder number to generate history " />
+                <input type="text" placeholder="Input your decoder number to generate history " />
             </div>
             <div className='transaction_btn'>
-                <button>Submit</button>
+                <button onClick={openModal}>Submit</button>
+                <TransactionSuccessfulModal showModal={showModal} closeModal={closeModal} />
             </div>
         </div>
 
