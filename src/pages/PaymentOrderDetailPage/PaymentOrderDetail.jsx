@@ -1,14 +1,14 @@
 import React from 'react'
-// import Modal from 'react-modal';
 import { useState } from 'react'
-import PaymentOptionDetailModal from '../PaymentOptionDetailModal/PaymentOptionDetailModal';
+import PaymentOptionDetailModal from '../../components/PaymentOptionDetailModal/PaymentOptionDetailModal';
+import PaymentOptionDesc from '../../components/PaymentOptionDetailComponent/PaymentOptionDesc'
 import "./PaymentOrderDetail.css"
 
 const PaymentOrderDetail = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
+    const [showModal, setShowModal] = useState(false)
     return (
         <div>
+            <PaymentOptionDesc />
             <div className='p_o_detail_container'>
                 <h2>Order Details</h2>
                 <div className="payment_order_detail">
@@ -39,13 +39,29 @@ const PaymentOrderDetail = () => {
                     <p>Enter your otp here </p>
                     <div className="pair_btn">
                     <input className="confirm_btn" type="submit" value="Confirm"/>
-                    <input onClick={() => {setIsOpen(true)}} className="cancel_btn" type="reset" value="Cancel"/>
+                    <input onClick={() => setShowModal(true)} className="cancel_btn" type="reset" value="Cancel"/>
                     </div>
+                    {showModal && (
+                        <div onClick={() => setShowModal(false)}>
+                            <Modal>
+                                <PaymentOptionDetailModal showModal={showModal} />
+                            </Modal>
+                        </div>
+                    )}
                 </form>
             </div>
-                {isOpen && <PaymentOptionDetailModal closeModal={setIsOpen} />}
         </div>
     )
 }
+
+function Modal({ children }) {
+    return (
+        <div style={{ background: 'rgba(0, 0, 0, 0.5)', position: 'fixed', top: 0, bottom: 0, left: 0, right: 0 }}>
+            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '20px' }}>
+            {children}
+            </div>
+        </div>
+        );
+    }
 
 export default PaymentOrderDetail
