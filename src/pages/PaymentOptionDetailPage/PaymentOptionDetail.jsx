@@ -1,6 +1,6 @@
 import React from 'react'
 import PaymentOptionDesc from '../../components/PaymentOptionDetailComponent/PaymentOptionDesc'
-import PaymentOrderDetail from '../../components/PaymentOptionDetailComponent/PaymentOrderDetail'
+import PaymentOrderDetail from '../PaymentOrderDetailPage/PaymentOrderDetail'
 
 const PaymentOptionDetail = () => {
     return (
@@ -10,5 +10,6 @@ const PaymentOptionDetail = () => {
         </div>
     )
 }
+
 
 export default PaymentOptionDetail
