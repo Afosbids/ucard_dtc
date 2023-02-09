@@ -7,16 +7,15 @@ import ContactSupport from './pages/ContactSupport/ContactSupport'
 import OrderDetailPage from './pages/OrderDetailPage/OrderDetailPage'
 import WrongOrderDetailPage from './pages/WrongOrderDetailPage/WrongOrderDetailPage'
 import OrderSummaryPage from './pages/OrderSummaryPage/OrderSummaryPage'
-import PaymentOptionDetailPage from './pages/PaymentOptionDetailPage/PaymentOptionDetail'
+import PaymentOrderDetailPage from './pages/PaymentOrderDetailPage/PaymentOrderDetail'
 import TransactionConfirmPage from './pages/TransactionConfirmPage/TransactionConfirmPage'
 import TransactionHistoryPage from './pages/TransactionHistoryPage/TransactionHistoryPage'
-import TransactionSuccessfulModal from './components/TransactionSuccessfulModal/TransactionSuccessfulModal'
-import OrderDetailNavBar from './components/OrderDetailPageComponent/OrderDetailNavBar'
 import { Layout } from './components/Layout/Layout'
 import SelectPaymentOption from './components/SelectPaymentOption/SelectPaymentOption'
 import StepperForm from './pages/StepperForm/StepperForm'
-import DropdownBouquet from './components/DropdownBouquet/DropdownBouquet'
 import TestGround from './pages/TestGround/TestGround'
+import TransactionSuccessfulModal from './components/TransactionSuccessfulModal/TransactionSuccessfulModal'
+
 
 function App() {
 
@@ -29,7 +28,7 @@ function App() {
       <Route path='/order-detail-page' element={<OrderDetailPage />}></Route>
       <Route path='/wrong-order-detail-page' element={<WrongOrderDetailPage />}></Route>
       <Route path='/order-summary-page' element={<OrderSummaryPage />}></Route>
-      <Route path='/payment-option-detail-page' element={<PaymentOptionDetailPage />}></Route>
+      <Route path='/payment-order-detail-page' element={<PaymentOrderDetailPage />}></Route>
       <Route path='/transaction-confirm-page' element={<TransactionConfirmPage />}></Route>
       <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
