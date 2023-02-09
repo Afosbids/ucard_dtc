@@ -3,7 +3,7 @@ import './PaymentOptionDetailModal.css'
 import Close_btn from '../../assets/Close.svg'
 import Info_icon from '../../assets/Info.svg'
 
-const PaymentOptionDetailModal = ({ closeModal }) => {
+const PaymentOptionDetailModal = () => {
     return (
         <div className="modal_background">
             <section className="modal-container">

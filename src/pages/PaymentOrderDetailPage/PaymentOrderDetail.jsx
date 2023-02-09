@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import PaymentOptionDetailModal from '../../components/PaymentOptionDetailModal/PaymentOptionDetailModal';
 import PaymentOptionDesc from '../../components/PaymentOptionDetailComponent/PaymentOptionDesc'
 import "./PaymentOrderDetail.css"
@@ -47,7 +46,7 @@ const PaymentOrderDetail = () => {
                                 <PaymentOptionDetailModal showModal={showModal} />
                             </Modal>
                         </div>
-                    )}
+                    )};
                 </form>
             </div>
         </div>
