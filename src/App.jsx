@@ -16,6 +16,7 @@ import { Layout } from './components/Layout/Layout'
 import SelectPaymentOption from './components/SelectPaymentOption/SelectPaymentOption'
 import StepperForm from './pages/StepperForm/StepperForm'
 import DropdownBouquet from './components/DropdownBouquet/DropdownBouquet'
+import TestGround from './pages/TestGround/TestGround'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
       <Route path='/stepper-form' element={<StepperForm />}></Route>
       <Route path='/transaction-success' element={<TransactionSuccessfulModal />}></Route>
+      <Route path='/testground' element={<TestGround />}></Route>
       {/* <Route path='/dropdown-bouquet' element={<DropdownBouquet />}></Route> */}
       <Route path='*' element={<NotFound />} />
       </Route>
