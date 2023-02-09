@@ -33,7 +33,6 @@ function App() {
       <Route path='/transaction-history-page' element={<TransactionHistoryPage />}></Route>
       <Route path='/select-payment-option' element={<SelectPaymentOption />}></Route>
       <Route path='/stepper-form' element={<StepperForm />}></Route>
-      <Route path='/transaction-success' element={<TransactionSuccessfulModal />}></Route>
       <Route path='/testground' element={<TestGround />}></Route>
       {/* <Route path='/dropdown-bouquet' element={<DropdownBouquet />}></Route> */}
       <Route path='*' element={<NotFound />} />

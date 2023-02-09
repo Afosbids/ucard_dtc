@@ -5,6 +5,7 @@ import HowItWorks from '../../components/HowItWorks/HowItWorks'
 import PaymentSuccessfulCard from '../../components/PaymentSuccessfulCard/PaymentSuccessfulCard'
 import TransactionReceipt from '../../components/TransactionReceipt/TransactionReceipt'
 import WrongOrderDetailHeading from '../../components/WrongOrderDetailHeading/WrongOrderDetailHeading'
+import TransactionConfirmPage from '../TransactionConfirmPage/TransactionConfirmPage'
 import './TestGround.css'
 
 const TestGround = () => {
@@ -13,6 +14,7 @@ const TestGround = () => {
         <EmailOtpCard />
         <TransactionReceipt />
         <PaymentSuccessfulCard />
+        <TransactionConfirmPage />
         {/* <CardDetailsCard /> */}
         
     </div>
