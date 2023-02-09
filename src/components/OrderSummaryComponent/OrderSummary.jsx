@@ -4,8 +4,8 @@ import './OrderSummary.css'
 const OrderSummary = () => {
     return (
         <div>
-            <section>
-                    <hr />
+            <section className="order-summary-section">
+                <hr/>
                 <div className="summary-container">
                     <div className="summary-left">
                         <p>Dstv Smart Card Number</p>
@@ -22,7 +22,7 @@ const OrderSummary = () => {
                         <p>otobordaniel@outlook.com</p>
                     </div>
                 </div>
-                <hr />
+                <hr/>
                 <div className="summary-container-2">
                     <div className="summary-bottom-left">
                             <p>Amount</p>
@@ -37,8 +37,7 @@ const OrderSummary = () => {
                 </div>
                 <div className='btn-2'>
                     <button>Proceed to Make Payment</button>
-                </div>
-                
+                </div>    
             </section>
         </div>
     )
