@@ -54,7 +54,7 @@ const SelectPaymentOption = () => {
       </Modal>
 
       : itemId === 2 ? 
-      navigate("/payment-option-detail-page")
+      navigate("/payment-order-detail-page")
 
       : ""
       }

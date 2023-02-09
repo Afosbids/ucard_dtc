@@ -7,6 +7,7 @@ import OrderDetailForm from '../../components/OrderDetailPageComponent/OrderDeta
 import OrderDetailFooter from '../../components/OrderDetailPageComponent/OrderDetailFooter'
 import PaymentOptionDetailModal from '../../components/PaymentOptionDetailModal/PaymentOptionDetailModal'
 
+
 const OrderDetailPage = () => {
     return (
     <div>
