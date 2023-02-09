@@ -8,8 +8,7 @@ const OrderSummaryHeader = () => {
             <section className="order_summary_session">
                 <div className="order_summary_header">
                     <img src={Dstv_logo} />
-                    <h1>Dstv Subscription</h1>
-                    
+                    <h1>Dstv Subscription</h1>    
                 </div>
             </section>
         </div>
