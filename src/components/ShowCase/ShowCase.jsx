@@ -15,7 +15,7 @@ const ShowCase = () => {
         <p>A platform for making payment for Cable TV
           subscriptions and bills payments.</p>
 
-          <Link to='./select-payment-option'> <button>Pay Now
+          <Link to='./order-detail-page'> <button>Pay Now
           </button></Link>
       </div>
 

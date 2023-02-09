@@ -1,11 +1,13 @@
 import React from 'react'
 import './OrderSummary.css'
+import { Link } from 'react-router-dom'
+
 
 const OrderSummary = () => {
     return (
         <div>
             <section>
-                    <hr />
+                <hr />
                 <div className="summary-container">
                     <div className="summary-left">
                         <p>Dstv Smart Card Number</p>
@@ -25,20 +27,22 @@ const OrderSummary = () => {
                 <hr />
                 <div className="summary-container-2">
                     <div className="summary-bottom-left">
-                            <p>Amount</p>
-                            <p>Fee</p>
-                            <p>Total Amount</p>
+                        <p>Amount</p>
+                        <p>Fee</p>
+                        <p>Total Amount</p>
                     </div>
                     <div className="summary-bottom-right">
-                            <p>SLL 14,500.00</p>
-                            <p>SLL 100.00</p>
-                            <p>SLL 14600.00</p>
+                        <p>SLL 14,500.00</p>
+                        <p>SLL 100.00</p>
+                        <p>SLL 14600.00</p>
                     </div>
                 </div>
-                <div className='btn-2'>
-                    <button>Proceed to Make Payment</button>
-                </div>
-                
+                <Link to="/select-payment-option">
+                    <div className='btn-2'>
+                        <button>Proceed to Make Payment</button>
+                    </div>
+                </Link>
+
             </section>
         </div>
     )
