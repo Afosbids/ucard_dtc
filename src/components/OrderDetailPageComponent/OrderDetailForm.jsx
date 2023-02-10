@@ -71,9 +71,17 @@ const OrderDetailForm = () => {
                     <label htmlFor="decoder_number">Input Decoder Number </label>
                     <input type="text" />
                 </div>
+                <div className="country_input">
+                    <label htmlFor="country">Country </label>
+                    <div className="country_select">
+                        <img className="country-logo" src={Country_flag} />
+                        <input type="text" placeholder='Nigeria (N)' />
+                        <img class="search-icon" src={Search_icon} />
+                    </div>
+                </div>
                 <div className="select-group-2">
                     <label htmlFor="buoquet_type">Select Bouquet Type</label>
-                    <span>
+                    <span onClick={toggleDropdown2}>
                         <input
                             type="text"
                             value={selectedOption2}
@@ -104,27 +112,11 @@ const OrderDetailForm = () => {
                         </ul>
                     )}
                 </div>
-                <div className="amount_input">
-                    <label htmlFor="amount">Amount </label>
-                    <input type="text" placeholder='Enter amount' />
+                <div className="form-btn">
+                    <Link to="/order-summary-page">
+                            <input type="button" value="Continue" />
+                    </Link>
                 </div>
-                <div className="email_input">
-                    <label htmlFor="email">Email </label>
-                    <input type="text" placeholder='Enter your valid email address' />
-                </div>
-                <div className="country_input">
-                    <label htmlFor="country">Country </label>
-                    <div className="country_select">
-                        <img className="country-logo" src={Country_flag} />
-                        <span>Sierra Leone (SL)</span>
-                        <input type="text" />
-                        <img class="search-icon" src={Search_icon} />
-                    </div>
-                    <div className="form-btn">
-                <Link to="/order-summary-page">
-                        <input type="button" value="Continue" />
-                </Link>
-                    </div>
             </form>
         </div>
     )
