@@ -7,7 +7,7 @@ const PaymentOptionDesc = () => {
             <div className="container">
             <div className="box left">1. Payment</div>
             <div className="box right">2. Confirm Payment</div>
-</div>
+            </div>
         </div>
     )
 }
