@@ -55,8 +55,6 @@
 .select-group-1 label,
 .select-group-2 label,
 .decoder_input label,
-.amount_input label,
-.email_input label,
 .country_input label {
     font-weight: 500;
     font-size: 16px;
@@ -67,7 +65,7 @@
 
 
 .select-group-1 span,
-.select-group-2 span, .decoder_input span, .amount_input span, .email_input span,
+.select-group-2 span, .decoder_input span,
 .country_input span {
     display: flex;
     align-items: center;
@@ -96,17 +94,7 @@
     width: 100%;
 }
 
-.amount_input {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    width: 100%;
-}
 
-.email_input,
 .country_input {
     display: flex;
     flex-direction: column;
@@ -116,8 +104,6 @@
     }
 
 .decoder_input input[type="text"],
-.amount_input input[type="text"],
-.email_input input[type="text"],
 .country_input input[type="text"] {
     box-sizing: border-box;
     border: 1.4px solid #989898;
@@ -128,11 +114,16 @@
     font-size: 16px;
 }
 
-.decoder_input input::placeholder,
-.amount_input input::placeholder,
-.email_input input::placeholder, 
-.country_input input::placeholder {
+.decoder_input input::placeholder{
     padding-left: 15px;
+    color: #989898;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.country_input input::placeholder {
+    padding-left: 40px;
     color: #989898;
     font-weight: 400;
     font-size: 14px;
@@ -165,16 +156,6 @@ input[type="text"] {
     padding-right: 32px;
 }
 
-.country_select {
-    margin-top: -20px;
-}
-
-.country_select span {
-    margin-left: 55px;
-    position: relative;
-    top: 38px;
-    color: #8692A6;
-}
 
 .form-btn {
     display: flex;
@@ -200,6 +181,7 @@ input[type="text"] {
     background: #45079A;
     border-radius: 6px;
     cursor: pointer;
+    margin-bottom: 120px;
 }
 
 .dropdown-options {
@@ -247,7 +229,7 @@ input[type="text"] {
     border-radius: 3.83873px;
     position: absolute;
     z-index: 2;
-    top: 725px;
+    top: 838px;
     right: center;
     background: #ffffff;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
