@@ -9,7 +9,9 @@ const OrderDetailNavBar = () => {
     <div>
         <section className="navbar">
             <div className="logo">
-                <a href=""><img src={Ucard_logo}/></a>
+                <Link to='./'>
+                    <a href=""><img src={Ucard_logo}/></a>
+                </Link>
             </div>
             
             <div className="link-container">
