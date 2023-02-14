@@ -18,7 +18,6 @@ const OrderDetailFooter = () => {
                     </div>
                     <div className='trademark'>
                         <p>Terms of Service | Privacy Policy<span> © Copyright Ucard 2023. All right reserved.</span></p>
-                        <p></p>
                     </div>    
                 </footer>
             </section>
