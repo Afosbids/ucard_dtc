@@ -1,2 +1,3 @@
 # ucard_dtc
-customerdev.ucard.store
+
+Ucard Website for TV Subscription, Electrical bills, etc.
